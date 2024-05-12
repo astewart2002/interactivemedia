@@ -3,6 +3,34 @@
 @import url('../fonts/Switzer-Variable.woff2');
 @import url('../fonts/Gambarino-Regular.woff2');
 
+@font-face {
+    font-family: 'PPNeueMontreal-Medium';
+  src: url('fonts/PPNeueMontreal-Medium.otf'); /* Locate the .ttf file within your directory*/
+}
+
+body {
+  font-family: 'PPNeueMontreal-Medium'; /* Use the font family */
+  }
+
+  @font-face {
+    font-family: 'SFPRODISPLAYREGULAR';
+  src: url('fonts/SFPRODISPLAYREGULAR.otf'); /* Locate the .ttf file within your directory*/
+}
+
+body {
+  font-family: 'SFPRODISPLAYREGULAR'; /* Use the font family */
+  }
+  
+
+@font-face {
+  font-family: 'PPEditorialOld-Regular';
+src: url('fonts/PPEditorialOld-Regular.otf'); /* Locate the .ttf file within your directory*/
+}
+
+body {
+font-family: 'PPEditorialOld-Regular', sans-serif; /* Use the font family */
+}
+
 .montserrat-me> {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -63,30 +91,35 @@ body {
 
 
   padding: 2rem;
-
-  background-color: rgb(234, 232, 232);
+  background-color: black;
+  /* background-color: rgb(234, 232, 232); */
 }
 
 
-.home-nav {
+.home-nav
+ {
   margin: 2rem 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1rem;
-  font-size: max(16px, 0.75rem);
-  /* font-style: italic; */
-  color: black;
+  font-size: 1rem;
+  font-family:'Montserrat';
+  /* text-transform:uppercase; */
+  /* font-weight: 600; */
+  color: white;
  
 }
 
 
 .nav-title {
-  font-size: 2.5em;
+  font-size:2.6em;
+  letter-spacing: 2px;
   /* font-family: "Sentient-Variable"; */
-  font-family: "Inconsolata";
-  font-weight: bold;
+  /* font-family: "Inconsolata"; */
+  font-family: "PPEditorialOld-Regular";
+  /* font-weight: bold; */
   display: block;
   animation: typing 2s steps(8), blink .5s step-end infinite alternate;
   white-space: nowrap;
@@ -113,6 +146,49 @@ body {
   transform: skew(20deg, 5deg);
 } */
 
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.home-nav {
+  color: white;
+  width: max-content;
+  background: (255,255,255,0.1);
+  border: 1px solid (255, 255,255,0.10);
+  border-radius: 40px;
+  backdrop-filter: blur(20px);
+  padding: 6px 12px;
+  /* transition: 0.3s; */
+  z-index: 10000;
+  /* animation: slideInLeft 1s ease-in; */
+}
+
+a.weekButton{
+  color: white;
+  width: max-content;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255, 255,255,0.1);
+  border-radius: 40px;
+  backdrop-filter: blur(20px);
+  padding: 6px 12px;
+  transition: 0.3s ease;
+  
+}
+
+.weekButton:hover {
+  background: none;
+  border: 3px solid rgba(218, 26, 26);
+  color: red;
+  transform: translateX(20px);
+
+}
+
+
 
 .home-section {
   grid-column: span 10;
@@ -120,23 +196,34 @@ body {
   display: flex;
   justify-content: center;
   width: auto;
-  background-color: white;
+  background-color: black;
   align-items:center;
-  /* padding-right: 8%; */
+
 }
 
 .home-graphic-1 {
   max-width: 70%;
 }
 
+.made-with-love {
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: 'PPEditorialOld-Regular';
+  letter-spacing: 1px;
+  /* text-transform: uppercase; */
+}
 
 .made-with-love:hover {
   font-weight: bold;
 }
 
+a {
+  color: white;
+}
+
 a:visited { 
   text-decoration: none; 
-  color: black; 
+  color: white; 
  }
  
 a:hover {
@@ -309,6 +396,7 @@ svg.trail path {
   }
 
   .content-container {
+    background-color: black;
     display: flex;
     justify-content: flex-start;
     width: 75vw;
@@ -322,9 +410,11 @@ svg.trail path {
     flex-direction: column;
     margin: auto;
     padding: 50px;
+    background: black;
   }
 
   .content-images {
+    align-self: flex-start;
     max-width: 60vw;
     margin: 10px;
   }
@@ -337,7 +427,12 @@ svg.trail path {
   } */
 
   .reflection-title {
-    font-family: "Inconsolata";
+    display: flex;
+    align-self: flex-start;
+    font-family: "Montserrat";
+    /* letter-spacing: 2px; */
+    font-weight:500;
+    color: white;
     padding-top: 2.5rem;
     padding-bottom: 10px;
     /* font-weight: bolder; */
@@ -346,20 +441,26 @@ svg.trail path {
   }
 
   .reflection-para {
+    max-width: 650px;
+    text-align: left;
+    align-items: flex-start;
+    align-self: flex-start;
+    color: white;
+    font-family: 'Montserrat';
     padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 20px;
     font-weight: 400;
   }
 
-  .body {
-    background-color: black;
-  }
+
   
   /* .wk1-body {
     background-color: black;
   } */
 
   .p5links-container{
+    background-color: black;
     display: flex;
     flex-direction: column;
     width: 75vw;
@@ -368,7 +469,7 @@ svg.trail path {
   }
 
   .p5links {
-    font-family: "Inconsolata";
+    font-family: "PPEditorialOld-Regular";
     display: flex;
     flex-direction: column;
     /* position: absolute; */
@@ -385,7 +486,8 @@ svg.trail path {
   
   .p5links:hover {
     font-weight: bold;
-    color: black;
+ 
+    color: red;
   }
 
   #blob-sketch {
@@ -394,6 +496,7 @@ svg.trail path {
 
   #selectedWeek {
     font-weight: bold;
+    color: red;
     /* color: red; */
   }
 
@@ -405,3 +508,17 @@ svg.trail path {
     display: flex;
     flex-direction: row;
   }
+
+  .body-7 {
+    background: black;
+    font-family: "PP";
+  }
+
+  .html {
+    background-color: black;
+  }
+
+
+
+  
+  

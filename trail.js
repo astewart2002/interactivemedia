@@ -67,3 +67,10 @@ window.addEventListener("resize", resize)
 
 anim()
 resize()
+
+
+
+
+
+
+

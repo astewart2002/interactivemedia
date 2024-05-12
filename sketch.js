@@ -340,3 +340,4 @@ function drawCube(size) {
   vertex(-size / 2, size / 2, -size / 2);
   endShape(CLOSE);
 }
+
