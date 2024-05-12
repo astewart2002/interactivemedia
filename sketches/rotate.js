@@ -3,7 +3,7 @@ function setup(){
 }
 
 function draw() {
-  background(300);
+  background(0);
   fill(255,0,0);
   noStroke();
   rectMode(CENTER);

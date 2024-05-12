@@ -286,7 +286,7 @@ function setup() {
 }
 
 function draw() {
-  background(300);
+  background(0);
   let redCount = 0; // Count the number of red squares
 
   for (var i = 0; i < squares.length; i++) {
@@ -310,9 +310,9 @@ function draw() {
 
     // Draw the square and fill it red if it's set to red
     if (square.red) {
-      fill(255, 0, 0);
+      fill(255,0,80);
     } else {
-      fill(0);
+      fill(255,0,0);
     }
     
     rect(3, 2, 1.5, 1.5);

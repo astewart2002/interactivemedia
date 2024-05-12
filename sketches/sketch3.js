@@ -278,7 +278,7 @@ function setup() {
 }
 
 function draw() {
-  background(300);
+  background(0);
   for (let i = 0; i < blobs.length; i++) {
     blobs[i].display();
     blobs[i].move();

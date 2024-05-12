@@ -6,3 +6,30 @@ html, body {
 canvas {
   display: block;
 }
+
+
+@font-face {
+  font-family: 'PPEditorialOld-Regular';
+src: url('/sketches/libraries/PPEditorialOld-Regular.otf'); /* Locate the .ttf file within your directory*/
+}
+
+body {
+font-family: 'PPEditorialOld-Regular', sans-serif; /* Use the font family */
+color: white;
+}
+/* 
+.sketch2-title {
+  font-family: 'PPEditorialOld-Regular';
+  z-index: 100000;
+  position: absolute;
+  display: flex;
+  align-self:baseline;
+} */
+
+.body {
+  background-color: black;
+}
+
+.html {
+  background-color: black;
+}
