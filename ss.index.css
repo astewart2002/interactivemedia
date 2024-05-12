@@ -47,11 +47,12 @@ font-family: 'PPEditorialOld-Regular', sans-serif; /* Use the font family */
 }
 
 a {
+  color: white;
   text-decoration: none;
 }
 
 a:link {
-  color: black;
+  color: white;
 }
 
 :root {
